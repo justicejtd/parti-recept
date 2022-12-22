@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925057768830",
+    "project_id": "partirecept",
+    "storage_bucket": "partirecept.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925057768830:android:0b4d62b6ec2162b261672f",
+        "android_client_info": {
+          "package_name": "com.example.partirecept"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925057768830-qvk62f94sol867pmugkrkppjtl9cglgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWo4fpfoQLIh7ffVu2pjVwcw-_qCTNPT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925057768830-qvk62f94sol867pmugkrkppjtl9cglgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

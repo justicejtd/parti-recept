@@ -1,0 +1,33 @@
+image: mobiledevops/flutter-sdk-image:2.0.1
+
+variables:
+
+# Cache downloaded dependencies and plugins between builds.
+# To keep cache across branches add 'key: "$CI_JOB_NAME"'
+cache:
+  paths:
+    - .pub-cache/global_packages
+
+stages:
+  - test 
+
+before_script:
+  - echo $Env:Path
+  - flutter pub get
+  - flutter clean
+  - flutter --version
+  - flutter pub global activate junitreport
+
+
+analyze_and_test:
+  stage: test
+  script:
+    - flutter analyze
+    - flutter test --machine | tojunit -o report.xml
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - report.xml
+  tags:
+    - shared
